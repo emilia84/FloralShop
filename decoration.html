@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowerstore | Decoration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/flower.png">
+</head>
+<body>
+        <header>
+            <span id="header">Floral Shop</span>
+            <form id="searchBar">
+                <input type="search" name="searchBox" id="searchBox" placeholder="Search for flowers, decoration items...">
+                <input type="submit" value="Search" id="searchButton">
+            </form>
+            <span id="signup">
+                <a href="signup.html">Sign up </a> 
+            </span>
+            <div id="myItems">
+                    <div>My Items(<span id="totalCount">0</span>)</div>
+            </div>
+            <button id="removeItem">Clear Items</button>
+        </header>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropButton" onclick="dropDown()">Categories</button>
+                        <div class="dropdownContent" id="myDropdown">
+                          <a href="flowers.html">Flowers</a>
+                          <a href="decoration.html">Decoration</a>
+                        </div>
+                    </div> 
+                </li>    
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Get in touch</a></li>
+            </ul>
+        </nav>
+    <div id="wrapper">
+            <h1>Decoration</h1>
+            <div id="products">
+                <div class="product" id="f13">
+                    <div class="thumbnail">
+                        <img src="images/f13.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span class="title">Flower + Wine Basket</span><br>
+                        From 105.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+                <div class="product"  id="f14">
+                    <div class="thumbnail">
+                        <img src="images/f14.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span class="title">BBQ Gift Box</span><br>
+                        From 65.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+
+                <div class="product"  id="f15">
+                    <div class="thumbnail">
+                        <img src="images/f15.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span class="title">Indie Stone - Original Soy Candles</span><br>
+                        From 18.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+
+                <div class="product"  id="f16">
+                    <div class="thumbnail">
+                        <img src="images/f16.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span class="title">Wine from the Clare Valley</span><br>
+                        From 28.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+
+                <div class="product"  id="f17">
+                    <div class="thumbnail">
+                        <img src="images/f17.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span class="title">Plant Lovers' Essential Kit</span><br>
+                        From 45.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+
+                <div class="product"  id="f18">
+                    <div class="thumbnail">
+                        <img src="images/f18.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span class="title">Mini Essentials Plant Care Kit</span><br>
+                        From 15.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+            </div>
+    </div>
+    <footer>
+        <ul>
+            <li>
+              <a href="https://twitter.com/EmiliaHoang84" class="social twitter">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/emilia-hoang" class="social linkedin">Linkedin</a>
+            </li>
+            <li>
+              <a href="https://github.com/emilia84" class="social github">Github</a>
+            </li>
+          </ul>
+          <p class="copyright">Copyright 2022| Floral Shop</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

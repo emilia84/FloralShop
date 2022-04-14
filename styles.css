@@ -1,0 +1,454 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Wrapper */
+#wrapper{
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(195, 42, 149, 0.08);
+    margin-top: 0;
+    padding: 0;
+}
+#wrapperForm{
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    margin-top: 0;
+    padding: 1em;
+    border: 0.5px solid rgba(195, 42, 149, 0.511);
+    border-radius: 7px;
+    color:rgb(195, 42, 149);
+}
+#wrapperForm>h1{
+    text-align: center;
+}
+#wrapperForm:hover{
+    background-color: rgba(195, 42, 149, 0.046);
+    transition: 0.5s;
+}
+input, textarea{
+    border: 0.5px solid rgba(195, 42, 149, 0.511);
+    border-radius: 2px;
+}
+fieldset{
+    border: none;
+    color: rgb(93, 90, 92);
+    color:rgb(195, 42, 149);
+}
+#wrapper>h1{
+    text-align: center;
+    color:rgb(195, 42, 149);
+    padding-top:4%;
+}
+/* The other component */
+main{
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    top: 0;
+    position: sticky;
+    background-color: rgb(255, 213, 241);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.5em; 
+    z-index: 5;
+    height: 100px;
+    color:rgb(195, 42, 149);
+    
+}
+#header{
+    display: block;
+    flex:1;
+    font-size: 1.5em;
+    text-align: center;
+}
+/* Serch bar */
+#searchBar{
+    flex:5;
+    display: flex;
+}
+#searchBox{
+    flex: 6;
+    padding: 0.5em
+}
+#searchButton{
+    flex:1;
+    background-color: rgb(195, 42, 149);
+    border: 0;
+    border-radius: 0em 0.2em 0.2em 0em;
+    color: white;
+}
+/* Sign up button */
+#signup{
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    font-size: 1.1em;
+}
+a{
+    text-decoration: none; 
+}
+a:any-link{
+    color: rgb(195, 42, 149);
+}
+a:visited{
+    color:rgb(195, 42, 149);
+}
+/* Cart button */
+#myItems {
+    display: flex;
+    font-size: 1.1em;
+
+}
+#myItems{
+    flex: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+}
+#removeItem{
+    flex: 0.7;
+    font-size: 1.1em;
+    color:rgb(195, 42, 149);
+    background-color: white;
+}
+#shoppingCart{
+    display: block;
+    width: 2em;
+    height: 2em;
+}
+/* nav bar */
+nav{
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding:0;
+    margin: 0;
+    margin-bottom: 2em;
+}
+nav ul li{
+    flex: 2.5;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    padding:0.5em;
+    border: 0.5px solid rgba(195, 42, 149, 0.244);
+
+}
+li:hover{
+    background-color: rgba(195, 42, 149, 0.361);
+    background-image: none;
+    transition: 1s;
+}
+
+h1{
+    padding: 0.5em;
+}
+#welcome{
+    margin-left: 15px;
+    padding: 0.5em;
+    padding-bottom: 1%;
+    text-align: center;
+    color:rgb(93, 90, 92);
+}
+.abt{
+    margin: 1em;
+    padding: 0.5em;
+    padding-bottom: 5%;
+    text-align: center;
+    color:rgb(93, 90, 92);
+}
+.image_1{
+    width: 100%;
+    height: auto;
+    position: relative;
+    object-fit: contain;
+}
+/* Banner at home page */
+.advert{
+    display: flex;
+    margin-bottom: 0.5em;
+    
+}
+#banners , #bannerAds2{
+    flex: 4.5;
+    position:relative;   
+    align-items: stretch; 
+}
+#bannerAdslong{
+    position: relative;
+}
+#bannerAdslong .textboxForAd{
+    display: block;
+    position: absolute;
+    width: 40%;
+    margin: 0 30%;
+    top: 30%;
+    text-align: center;
+    color: white;
+    background-color: rgba(195, 42, 149, 0.662);
+}
+#banners{
+    margin-right: 0.3em
+}
+#banners img, #bannerAds2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.textboxForAd{
+    display: block;
+    position: absolute;
+    width: 60%;
+    margin: 0 20%;
+    top: 40%;
+    text-align: center;
+    color: white;
+    background-color: rgba(195, 42, 149, 0.662);
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+.flex{
+    display: flex;
+    align-items: stretch;
+}
+.flex input{
+    flex:7;
+    margin:0.5em;
+}
+.flex label{
+    flex:3;
+}
+#flexButton{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.button{
+    padding: 0.5em 1.5em;
+    background-color: rgb(195, 42, 149);
+    margin:1em;
+    color: whitesmoke;
+}
+#products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product{
+    width: 33.33%;
+    padding:0.5em;
+    margin-bottom: 0.5em;
+    
+}
+.thumbnail img{
+    height: 24em;
+}
+.itemDescription span{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.itemDescription{
+    text-align: center;
+}
+#justforyou{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding:0.5em;
+    margin: 0.5em;
+    color:rgb(195, 42, 149);
+}
+footer{
+    background-color: rgba(195, 42, 149, 0.135);
+    padding: 1em;
+    text-align: center;
+    margin-top: 2em;
+    line-height: 1.3em;
+}
+footer .copyright {
+    top: -8px;
+    font-size: 0.75em;
+}
+  
+footer ul {
+    list-style-type: none;
+    margin-top: 2%;
+    padding: 0;
+}
+  
+footer ul li {
+    display: inline-block;
+}
+  
+a.social {
+    display: inline-block;
+    text-indent: -9999px;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+    opacity: 0.4;
+    transition: all 0.5s;
+}
+a.twitter {
+    background-image: url(images/twitter.png);
+}
+a.linkedin {
+    background-image: url(images/linkedin.png);
+}
+a.github {
+    background-image: url(images/github.png);
+}
+a.social:hover {
+    opacity: 1;
+}
+.clearfix {
+    clear: both;
+}
+#comment{
+    width: 100%;
+    height: 7em;
+}
+#wrapperForm input{
+    margin: 0.5em;
+    width: 100%;
+    height: 3em;
+}
+.additem{
+   background-color: rgb(195, 42, 149);
+   color: whitesmoke;
+   padding: 0.3em 0.8em;
+   width: 100%;
+   margin-top: 2%;
+   margin-bottom: 2%;
+    
+}
+/* Drop down meunu */
+.dropdown {
+    overflow: hidden;
+}
+.dropdown .dropButton {
+    cursor: pointer;
+    font-size: 16px;  
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    outline: none;
+    color: rgb(195, 42, 149);
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-align: center;
+} 
+.dropdownContent {
+    margin-top: 0.8em;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 25%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdownContent a {
+    float: none;
+    color: black;
+    padding: 1em 1em;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdownContent a:hover {
+    background-color: #ddd;
+}
+/* For tablet */
+@media screen and (max-width: 768px){
+    #wrapper{
+        width: 100%;
+    }
+    .product{
+        width: 33.33%;
+    }
+    #wrapperForm{
+        width: 80%;
+    }
+}
+/* For mobile */
+@media screen and (max-width: 426px){
+    header{
+        position: static;
+    }
+    #header{
+        font-size: 35px;
+    }
+    main{
+        width: 100%;
+    }
+    /* #wrapper{
+        width: 100%;
+    } */
+    .product{
+        width: 100%;
+    }
+    .textboxForAd{
+        font-size: small;
+    }
+    #signup{
+        display: none;
+    }
+    #myItems{
+        display: none;
+    }
+    #wrapperForm{
+        width: 80%;
+    }
+    #removeItem{
+        display: none;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    .dropdownContent{
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+        
+    }
+    #header{
+        width: 100%;
+    }
+    #searchBar{
+        width: 100%;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    #removeItem{
+        margin-top: 0.5em;
+    }
+    .openButton{
+        bottom: 0.5em;
+        right: 0.5em;
+        padding: 0.8em 0.9em;
+    }
+}

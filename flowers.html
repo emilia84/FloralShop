@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowerstore | Flowers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/flower.png">
+</head>
+<body>
+        <header>
+            <span id="header">Floral Shop</span>
+            <form id="searchBar">
+                <input type="search" name="searchBox" id="searchBox" placeholder="Search for flowers, decoration items...">   <!--Search Bar-->
+                <input type="submit" value="Search" id="searchButton">
+            </form>
+            <span id="signup">
+                <a href="signup.html">Sign up </a> 
+            </span>
+            <div id="myItems"> 
+                <div>My Items(<span id="totalCount">0</span>)</div>
+            </div>
+            <button id="removeItem">Clear Items</button>
+        </header>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropButton" onclick="dropDown()">Categories</button>
+                        <div class="dropdownContent" id="myDropdown">       <!--Drop down list-->          
+                          <a href="flowers.html">Flowers</a>
+                          <a href="decoration.html">Decoration</a>
+                        </div>
+                    </div> 
+                </li>    <!--Insert link-->
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Get in touch</a></li>
+            </ul>
+        </nav>
+    <div id="wrapper">
+            <h1>Flowers</h1>
+            <!-- Products list -->
+            <div id="products">
+                <div class="product" id="f1">
+                    <div class="thumbnail">
+                        <img src="images/f1.webp" alt="Thumbnail" class="image_1">         
+                    </div>
+                    <div class="itemDescription">
+                        <span class="title">Seasonal Jar</span><br>
+                        From $45.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+
+                <div class="product" id="f2">
+                    <div class="thumbnail">
+                        <img src="images/f2.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span>Bright Bouquet</span><br>
+                        From $60.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+
+                <div class="product" id="f3">
+                    <div class="thumbnail">
+                        <img src="images/f5.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span>Local Sunshine Bouquet</span><br>
+                        From $30.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+
+                <div class="product" id="f4">
+                    <div class="thumbnail">
+                        <img src="images/f4.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span>Bloom Box</span><br>
+                        From $55.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+
+                <div class="product" id="f5">
+                    <div class="thumbnail">
+                        <img src="images/f3.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span>Lillies</span><br>
+                        From $80.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+
+                <div class="product" id="f6">
+                    <div class="thumbnail">
+                        <img src="images/f6.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span>Designer Flowers</span><br>
+                        From 180.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+
+                <div class="product" id="f7">
+                    <div class="thumbnail">
+                        <img src="images/f7.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span>Sunflowers</span><br>
+                        From 45.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+
+                <div class="product" id="f8">
+                    <div class="thumbnail">
+                        <img src="images/f8.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span>Daisies</span><br>
+                        From 40.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+
+                <div class="product" id="f9">
+                    <div class="thumbnail">
+                        <img src="images/f9.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span>Neutral Vase Arrrangement</span><br>
+                        From 80.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+                <div class="product" id="f10">
+                    <div class="thumbnail">
+                        <img src="images/f10.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span>Mother's Day Box Arrrangement</span><br>
+                        From 60.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+                <div class="product" id="f11">
+                    <div class="thumbnail">
+                        <img src="images/f11.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span>Mother's Day Bouquet</span><br>
+                        From 55.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+                <div class="product" id="f12">
+                    <div class="thumbnail">
+                        <img src="images/f12.webp" alt="Thumbnail" class="image_1">
+                    </div>
+                    <div class="itemDescription">
+                        <span>Mother's Day Card</span><br>
+                        From 6.00 CAD
+                    </div>
+                    <button class="additem">Add Item</button>
+                </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>
+              <a href="https://twitter.com/EmiliaHoang84" class="social twitter">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/emilia-hoang" class="social linkedin">Linkedin</a>
+            </li>
+            <li>
+              <a href="https://github.com/emilia84" class="social github">Github</a>
+            </li>
+          </ul>
+          <p class="copyright">Copyright 2022| Floral Shop</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

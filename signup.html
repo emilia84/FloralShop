@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowerstore | Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/flower.png">
+</head>
+<body>
+        <header>
+            <span id="header">Floral Shop</span>
+            <form id="searchBar">
+                <input type="search" name="searchBox" id="searchBox" placeholder="Search for flowers, decoration items...">
+                <input type="submit" value="Search" id="searchButton">
+            </form>
+            <span id="signup">
+                <a href="signup.html">Sign up</a> <!--Insert link-->
+            </span>
+            <div id="myItems">
+                <div>My Items(<span id="totalCount">0</span>)</div>
+            </div>
+            <button id="removeItem">Clear Items</button>
+        </header>
+        <nav> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropButton" onclick="dropDown()">Categories</button>
+                        <div class="dropdownContent" id="myDropdown">
+                          <a href="flowers.html">Flowers</a>
+                          <a href="decoration.html">Decoration</a>
+                        </div>
+                    </div> 
+                </li>    <!--Insert link-->
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Get in touch</a></li>
+            </ul>
+        </nav>
+        <div id="wrapperForm">
+            <form>
+                <fieldset>
+                        <div class="flex">
+                            <label for="firstname">First Name *</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+
+                        <div class="flex">
+                            <label for="lastname">Last Name *</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+
+                        <div class="flex">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="flex">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" name="country">
+                        </div>
+
+                        <div class="flex">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city">
+                        </div>
+
+                        <div class="flex">
+                            <label for="province">Province</label>
+                            <input type="text" id="province" name="province">
+                        </div>
+
+                        <div class="flex">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address">
+                        </div>
+
+                        <div class="flex">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+
+                        <div id="flexButton">
+                            <input type="submit" value="Sign up" class="button">
+                            <input type="reset" class="button">
+                        </div>
+                        
+                </fieldset>
+            </form>
+
+        </div>
+        <footer>
+            <ul>
+                <li>
+                  <a href="https://twitter.com/EmiliaHoang84" class="social twitter">Twitter</a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/emilia-hoang" class="social linkedin">Linkedin</a>
+                </li>
+                <li>
+                  <a href="https://github.com/emilia84" class="social github">Github</a>
+                </li>
+              </ul>
+              <p class="copyright">Copyright 2022| Floral Shop</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowerstore | Get in touch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/flower.png">
+</head>
+<body>
+    <header>
+        <span id="header">Floral Shop</span>
+        <form id="searchBar">
+            <input type="search" name="searchBox" id="searchBox" placeholder="Search for flowers, decoration items...">
+            <input type="submit" value="Search" id="searchButton">
+        </form>
+        <span id="signup">
+            <a href="signup.html">Sign up</a> <!--Insert link-->
+        </span>
+        <div id="myItems">
+                <div>My Items(<span id="totalCount">0</span>)</div>
+        </div>
+        <button id="removeItem">Clear Items</button>
+    </header>
+    <nav> 
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div class="dropdown">          <!--Dropdown list-->
+                    <button class="dropButton" onclick="dropDown()">Categories</button>
+                    <div class="dropdownContent" id="myDropdown">
+                        <a href="flowers.html">Flowers</a>
+                        <a href="decoration.html">Decoration</a>
+                    </div>
+                </div> 
+            </li>    <!--Insert link-->
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Get in touch</a></li>
+        </ul>
+    </nav>
+    <div id="wrapperForm">
+        <h1>Have a question for us?</h1>
+        <form>
+            <fieldset>
+                <label for="username">Your Name</label><br>
+                <input type="text" name="username" id="username"><br>
+                <label for="email">Your Email</label><br>
+                <input type="email" name="email" id="email"><br>
+                <label for="tel">Your Telephone Number</label><br>
+                <input type="tel" name="tel" id="tel"><br>
+                <label for="comment">Your Message</label><br>
+                <textarea placeholder="Your message" name="comment" id="comment" ></textarea>
+                <input type="submit" class="button">
+            </fieldset>
+        </form>
+    </div>
+    <footer>
+        <ul>
+            <li>
+                <a href="https://twitter.com/EmiliaHoang84" class="social twitter">Twitter</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/emilia-hoang" class="social linkedin">Linkedin</a>
+            </li>
+            <li>
+                <a href="https://github.com/emilia84" class="social github">Github</a>
+            </li>
+        </ul>
+        <p class="copyright">Copyright 2022| Floral Shop</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
